@@ -1,0 +1,44 @@
+_id: req_fedf4305aae4442890576b0d5a1949a7
+type: Request
+parentId: fld_1030a5f4350647359b0e46e99249b74c
+modified: 1689029051809
+created: 1689029051809
+url: "{{ _.base_api_url }}member/send-otp"
+name: SendOTP
+description: |
+  type = email  or contact
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"type": "contact",
+    	"identifier" : "9999888830",
+    	"token" : null
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_442830592f884edfbc8fd0f46d23c0b9
+  - id: pair_e1551b22217245d38d2e27d19d51fe68
+    name: Accept
+    value: application/json
+    description: ""
+  - id: pair_89d2bb388013410baba8efa28c4934b5
+    name: X-XSRF-TOKEN
+    value: "{% laravel_csrf 'XSRF-TOKEN' %}"
+    description: ""
+  - id: pair_8d9bdcd9b5524ce59624748da431cfd2
+    name: Referer
+    value: "{{ _.referer }}"
+    description: ""
+authentication: {}
+metaSortKey: -1686780858320
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,25 +1,27 @@
-_id: req_62033b7430e04340aff99c2216cc0380
+_id: req_7c895c9e6feb435080eb554e171eabfe
 type: Request
-parentId: fld_d492de6892f844f382983e1659eaaac6
-modified: 1689027580186
-created: 1688985794752
+parentId: fld_0b497c96a1b4473fbac58800d2f51282
+modified: 1689029114900
+created: 1689029051800
 url: "{{ _.base_api_url }}member/details"
-name: Member Details
+name: " Details"
 description: ""
 method: GET
 body: {}
 parameters: []
 headers:
-  - id: pair_e83fd4a400f64011beb67a4284331139
+  - id: pair_2d7210c5b89644d2991e7da872481e08
     name: X-XSRF-TOKEN
     value: "{% laravel_csrf 'XSRF-TOKEN' %}"
     description: ""
-  - id: pair_a1c25f8e9a634d31b0bd1fa758a43091
+    disabled: false
+  - id: pair_6812606acddd4251bedd8cce2f331a45
     name: Referer
     value: "{{ _.referer }}"
     description: ""
+    disabled: false
 authentication: {}
-metaSortKey: -1688086409291.5
+metaSortKey: -1686508729221.125
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

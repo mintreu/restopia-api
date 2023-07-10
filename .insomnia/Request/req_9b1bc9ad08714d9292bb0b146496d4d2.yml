@@ -1,0 +1,48 @@
+_id: req_9b1bc9ad08714d9292bb0b146496d4d2
+type: Request
+parentId: fld_0b497c96a1b4473fbac58800d2f51282
+modified: 1689030182037
+created: 1689029051778
+url: "{{ _.base_api_url }}member/register"
+name: Register
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Jone Doe",
+    	"email": "jones@mintreus.com",
+    	"contact": "9999888830",
+    	"password": "password",
+    	"confirm_password": "password",
+    	"code" : "427831",
+    	"referral": "cmember@example.com"
+    }
+parameters: []
+headers:
+  - id: pair_444b1f6b571046cfbdbe2e91e239ef18
+    name: Content-Type
+    value: application/json
+    description: ""
+  - id: pair_c71bfcf4b81442ff87d00153a25e2458
+    name: Referer
+    value: "{{ _.referer }}"
+    description: ""
+  - id: pair_c1092db86789443eb7ad700c409cd5f0
+    name: X-XSRF-TOKEN
+    value: "{% laravel_csrf 'XSRF-TOKEN' %}"
+    description: ""
+  - id: pair_b9e943c0222047a8b32029435342c9bc
+    name: Accept
+    value: application/json
+    description: ""
+authentication: {}
+metaSortKey: -1686508734691.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

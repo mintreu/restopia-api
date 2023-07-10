@@ -1,0 +1,37 @@
+_id: req_b824fb5d50884189931a5e5249e4c70a
+type: Request
+parentId: fld_0b497c96a1b4473fbac58800d2f51282
+modified: 1689029051788
+created: 1689029051788
+url: ""
+name: Reset
+description: ""
+method: POST
+body: {}
+parameters: []
+headers:
+  - id: pair_1daedcd160f04a4a96be87e0abc19aca
+    name: Content-Type
+    value: application/json
+    description: ""
+  - id: pair_b7fb28a9f17b4a12acc11d0b36f3d914
+    name: Referer
+    value: "{{ _.referer }}"
+    description: ""
+  - id: pair_ca623bb513ec4af98b72b9f0a07fb0d5
+    name: X-XSRF-TOKEN
+    value: "{% laravel_csrf 'XSRF-TOKEN' %}"
+    description: ""
+  - id: pair_caa6effccb1b477ab246bb9b1eff60ee
+    name: Accept
+    value: application/json
+    description: ""
+authentication: {}
+metaSortKey: -1686508729243
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

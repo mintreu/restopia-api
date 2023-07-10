@@ -1,0 +1,44 @@
+_id: req_4cf38854aa714c208c031ad4a5aa31f0
+type: Request
+parentId: fld_1030a5f4350647359b0e46e99249b74c
+modified: 1689029051813
+created: 1689029051813
+url: "{{ _.base_api_url }}member/verify-otp"
+name: VerifyOtp
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"type": "contact",
+    	"identifier" : 9999888825,
+    	"otp" : "154345"
+    }
+parameters: []
+headers:
+  - id: pair_f92837f6a00b4b03845bf82787b5a53e
+    name: Content-Type
+    value: application/json
+    description: ""
+  - id: pair_249b97312b784bcb8a3b66a8bb13ead4
+    name: Accept
+    value: application/json
+    description: ""
+  - id: pair_d2a51136697942bfbf37fa118aca6671
+    name: X-XSRF-TOKEN
+    value: "{% laravel_csrf 'XSRF-TOKEN' %}"
+    description: ""
+  - id: pair_5ac293f20d8b41cc8ecc0a33e9b14a40
+    name: Referer
+    value: "{{ _.referer }}"
+    description: ""
+authentication: {}
+metaSortKey: -1686780858270
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,45 @@
+_id: req_acd1a13d07ac4303be3503992b2e6631
+type: Request
+parentId: fld_0b497c96a1b4473fbac58800d2f51282
+modified: 1689029051784
+created: 1689029051784
+url: "{{ _.base_api_url }}member/login"
+name: Login
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"identifier" : "member@example.com",
+    	"password" : "Password@123"
+    }
+parameters: []
+headers:
+  - id: pair_93d967a932e2482ea052265964bc02de
+    name: Content-Type
+    value: application/json
+    description: ""
+  - id: pair_b76d3f16fd5145d4816cd441333d34c7
+    name: Referer
+    value: "{{ _.referer }}"
+    description: ""
+    disabled: false
+  - id: pair_b9d9883ca8074b8592558d87aad34825
+    name: X-XSRF-TOKEN
+    value: "{% laravel_csrf 'XSRF-TOKEN' %}"
+    description: ""
+  - id: pair_53424611a2f34cba8cfff299addf0116
+    name: Accept
+    value: application/json
+    description: ""
+    disabled: false
+authentication: {}
+metaSortKey: -1686508729230.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
