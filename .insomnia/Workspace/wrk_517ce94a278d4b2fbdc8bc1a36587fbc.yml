@@ -1,0 +1,8 @@
+_id: wrk_517ce94a278d4b2fbdc8bc1a36587fbc
+type: Workspace
+parentId: null
+modified: 1688977953012
+created: 1688977676396
+name: restopia-api.yaml
+description: "## This api collection is supported for restopia (mintreu)"
+scope: design

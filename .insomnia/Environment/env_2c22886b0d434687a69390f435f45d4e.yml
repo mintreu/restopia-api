@@ -1,0 +1,18 @@
+_id: env_2c22886b0d434687a69390f435f45d4e
+type: Environment
+parentId: env_4326826a393babe4ed85b7483b81c21ba4daf9bd
+modified: 1688977861096
+created: 1688977830884
+name: Dev
+data:
+  base_api_url: localhost:8000/api/
+  base_url: http://localhost:8000/
+  referer: http://localhost:3000
+dataPropertyOrder:
+  "&":
+    - base_api_url
+    - base_url
+    - referer
+color: "#3ec224"
+isPrivate: false
+metaSortKey: 1688977830884
